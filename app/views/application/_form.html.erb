@@ -1,0 +1,9 @@
+<%= form_tag root_path, class:'ui form' do %>
+  <%= content_tag(:div, class: 'field') do %>
+    <%= content_tag(:div, class: 'ui labeled action input') do  %>
+      <%= content_tag(:div, class: 'ui label') { label_tag 'user_name', "User name" } %>
+      <%= text_field_tag 'user_name', nil, placeholder: 'ayushkapartohap' %>
+      <%= content_tag(:button, 'Fetch', class: 'ui violet submit button') %>
+    <% end %>
+  <% end %>
+<% end %>

@@ -1,1 +1,10 @@
-<h1>hi</h1>
+<div class="ui grid">
+  <div class="six wide column">
+    <%= render 'form' %>
+  </div>
+</div>
+<% if @pic_urls && @pic_urls.any? %>
+  <div class="ui divider"></div>
+  <%= render 'pictures' %>
+<% end %>
+
